@@ -1,0 +1,49 @@
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700|Ubuntu:700" rel="stylesheet">
+
+html {
+  font-size: 1em;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+p {
+  margin-bottom: 1.3em;
+  font-size: 15px;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 700;
+  line-height: 2;
+  text-align: justify;
+  padding-bottom: 20px;
+
+}
+
+h1, h2, h3, h4 {
+font-family: 'Ubuntu', sans-serif;
+font-weight: 700;
+  margin: center;
+  line-height: 1.2;
+}
+
+h1 {
+font-family: 'Cinzel', serif;
+  font-size: 3.998em;
+  font-weight: 700;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
+
+.content h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  }

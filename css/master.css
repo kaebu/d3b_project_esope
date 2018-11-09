@@ -1,0 +1,157 @@
+/* Ceci est un commentaire en CSS - Les navigateurs ignorent les commentaires.
+De cette manière nous pouvons laisser des messages pour d'autres codeurs et des explications de ce que nous avons fait. */
+
+/* Dans les 4 selectors suivants nous allons travailler sur la navigation de notre page.
+
+Nous découvrons ici la possibilité d'utiliser des selectors composés ex : header ul  Ceci permet, par exemple, de cibler les elements de la liste du header sans affecter ceux du footer.
+ */
+ /* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+ */
+@import url('https://fonts.googleapis.com/css?family=K2D|Montserrat|Playfair+Display|Quicksand|Roboto+Slab|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+
+header {
+background-color: #ffed62;
+  padding: 42px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline-block;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  line-height: 32px;
+  padding-right: 40px;
+
+}
+
+header a {
+  text-decoration: none;
+  color : #020024;
+  padding: 12px;
+  display: block;
+  font-size: 22px;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+}
+
+/* A noter ici :
+1. L'utilisation d'une class sur la div, nous la ciblons ici dans la CSS au moyen d'un point .
+2. l'utilisation de background image et de background size
+3. une hauteur minimal à la div. (pour comprendre ce qu'est une VH : https://css-tricks.com/the-lengths-of-css/)
+*/
+.hero {
+  background: url('images/water.jpeg');
+  color: #ffed62;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+font-size: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/* Sur les sections :
+1. Nous utilisons encore une hauteur minimale pour faciliter la lecture et le rythme vertical de la page.
+2. Nous utilsons des classes pour permettre d'aleterner visuellement les sections.
+*/
+section {
+display: flex;
+justify-content: space-around;
+}
+
+.content {
+flex-basis: 480px;
+}
+
+
+.odd {
+  background:#ffed62;
+  font-family: 'Ubuntu', sans-serif;
+  color:#020024;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.even {
+  background:#020024;
+  font-family: 'Ubuntu', sans-serif;
+  color:#ffed62;
+}
+
+/* Nous souhaitons que les images soient responsives... c'est à dire n'éxcèdent pas une certaine largeur ET se redimensionnent avec leur parent */
+
+.image-block img {
+  width : 100%;
+display:block;
+padding-top: 45px;
+max-width: 450px;
+}
+
+figcaption {
+
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+.illustration figcaption {
+
+  display: flex;
+justify-content: center;
+}
+
+footer {
+  background-color: #020024;
+    padding: 42px;
+
+}
+
+footer p{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+display: flex;
+  justify-content: center;
+  color: #ffed62;
+  padding-left: 45px;
+}
+footer li{
+  border: 0px;
+  text-decoration: none;
+  color : #ffed62;
+display: block;
+  font-size: 22px;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 400;
+display: flex;
+justify-content: center;
+line-height: 60px;
+}
+
+
+/*
+
+// Small devices
+
+// Medium devices (landscape phones, 576px and up)
+@media (min-width: 640px) { ... }
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// Extra large devices
+
+@media (min-width: 1440px) { ... }
+
+*/
